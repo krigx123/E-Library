@@ -1,4 +1,4 @@
-import { books } from ".../data/books"; // Adjust the path as necessary
+import { books } from "../../data/books"; // Adjust the path as necessary
 
 export default function updateStatus(req, res) {
     if (req.method !== "POST") {
