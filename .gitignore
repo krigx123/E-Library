@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vercel
+arduino.py
+.env
+arduino2.py

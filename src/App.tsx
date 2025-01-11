@@ -1,6 +1,5 @@
-import { useState, useMemo } from 'react';
-import { books } from './data/books';
-import { Filter, QueueEntry } from './types';
+import { useState, useMemo, useEffect } from 'react';
+import { Filter, QueueEntry, Book } from './types';
 import { FilterSection } from './components/FilterSection';
 import { BookCard } from './components/BookCard';
 import { Navigation } from './components/Navigation';
@@ -15,12 +14,37 @@ function App() {
     status: 'all'
   });
   const [queue, setQueue] = useState<QueueEntry[]>([]);
+  const [books, setBooks] = useState<Book[]>([]); // Dynamically loaded books
+  const [loading, setLoading] = useState<boolean>(true); // Loading state
+  const [error, setError] = useState<string | null>(null); // Error state
+
+  // Fetch books.json dynamically
+  useEffect(() => {
+    const fetchBooks = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const response = await fetch('/books.json');
+        if (!response.ok) {
+          throw new Error(`Failed to load books.json: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setBooks(data);
+      } catch (err: any) {
+        setError(err.message || 'Failed to fetch books.json.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBooks();
+  }, []);
 
   // Extract unique genres from books
   const availableGenres = useMemo(() => {
     const genres = new Set(books.flatMap(book => book.genre));
     return Array.from(genres).sort();
-  }, []);
+  }, [books]);
 
   // Filter books based on search criteria
   const filteredBooks = useMemo(() => {
@@ -40,7 +64,7 @@ function App() {
       
       return matchesSearch && matchesGenres && matchesStatus;
     });
-  }, [filter]);
+  }, [filter, books]);
 
   const handleQueue = (bookId: string, userName: string) => {
     const book = books.find(b => b.id === bookId);
@@ -72,7 +96,15 @@ function App() {
         queueCount={queue.length}
       />
 
-      {currentPage === 'library' ? (
+      {loading ? (
+        <div className="text-center py-12">
+          <p className="text-gray-500">Loading books...</p>
+        </div>
+      ) : error ? (
+        <div className="text-center py-12">
+          <p className="text-red-500">Error: {error}</p>
+        </div>
+      ) : currentPage === 'library' ? (
         <main className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="md:col-span-1">
