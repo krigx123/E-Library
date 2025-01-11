@@ -1,3 +1,5 @@
 {
-  "name": "e-library"
+  "builds": [
+    { "src": "pages/api/**/*.js", "use": "@vercel/node" }
+  ]
 }
