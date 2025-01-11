@@ -1,7 +1,7 @@
 import { books } from "../src/data/books";
 // Adjust path to your `books.ts`
 
-export default async(req, res) => {
+export default function updateStatus(req, res) {
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
