@@ -1,6 +1,7 @@
 import { books } from "../../data/books"; // Adjust the path as necessary
 
-export default function updateStatus(req, res) {
+export default function handler(req, res) {
+    console.log(req.body);
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
