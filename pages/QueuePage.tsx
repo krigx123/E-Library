@@ -1,6 +1,6 @@
 import React from 'react';
-import { QueueList } from '../components/QueueList';
-import { Book, QueueEntry } from '../types';
+import { QueueList } from '../src/components/QueueList';
+import { Book, QueueEntry } from '../src/types';
 import { ClipboardList } from 'lucide-react';
 
 interface QueuePageProps {

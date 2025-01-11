@@ -4,7 +4,7 @@ import { Filter, QueueEntry } from './types';
 import { FilterSection } from './components/FilterSection';
 import { BookCard } from './components/BookCard';
 import { Navigation } from './components/Navigation';
-import { QueuePage } from './pages/QueuePage';
+import { QueuePage } from '../pages/QueuePage';
 import { calculateNextAvailableDate } from './utils/dateUtils';
 
 function App() {

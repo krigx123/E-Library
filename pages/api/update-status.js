@@ -1,4 +1,4 @@
-import { books } from "../../data/books"; // Adjust the path as necessary
+import { books } from "../../src/data/books"; // Adjust the path as necessary
 
 export default function handler(req, res) {
     console.log(req.body);
