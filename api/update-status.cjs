@@ -1,7 +1,6 @@
-import { books } from "../src/data/books";
-// Adjust path to your `books.ts`
+const { books } = require("../src/data/books");
 
-export default function updateStatus(req, res) {
+module.exports = function updateStatus(req, res) {
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
@@ -20,4 +19,4 @@ export default function updateStatus(req, res) {
     }
 
     return res.status(404).json({ error: "Book not found" });
-}
+};
