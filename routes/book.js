@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { books } = require("../data/books");
+const { books } = require("../src/data/books");
 
 // Endpoint to update book status
 router.post("/update-status", (req, res) => {
