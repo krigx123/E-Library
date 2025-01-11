@@ -1,8 +1,7 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
 import { books } from "../src/data/books";
 // Adjust path to your `books.ts`
 
-export default function updateStatus(req: VercelRequest, res: VercelResponse) {
+export default async(req, res) => {
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
