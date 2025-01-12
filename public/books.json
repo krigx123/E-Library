@@ -4,12 +4,13 @@
     "title": "Higher Engineering Mathematics",
     "author": "BS Grewal",
     "genre": ["Education", "Mathematics"],
-    "position": { "shelf": "C", "row": 3, "column": 2 },
+    "position": { "shelf": "A", "row": 3, "column": 2 },
     "status": "issued",
     "coverUrl": "https://m.media-amazon.com/images/I/61iPd6gxtOL._SY385_.jpg",
     "issuedDate": "2024-12-16",
     "returnDate": "2024-12-23",
-    "currentHolder": "John Doe"
+    "currentHolder": "John Doe",
+    "isbn": "9784317579091"
   },
   {
     "id": "2",
