@@ -17,12 +17,13 @@
     "title": "Calculus",
     "author": "James Stewart",
     "genre": ["Education", "Mathematics"],
-    "position": { "shelf": "F", "row": 2, "column": 1 },
+    "position": { "shelf": "B", "row": 2, "column": 1 },
     "status": "issued",
     "coverUrl": "https://m.media-amazon.com/images/I/71qKyp9CyaL._SY385_.jpg",
     "issuedDate": "2024-12-19",
     "returnDate": "2024-12-26",
-    "currentHolder": "Sanjay Hussain"
+    "currentHolder": "Sanjay Hussain",
+    "isbn": "9785392400898"
   },
   {
     "id": "3",
