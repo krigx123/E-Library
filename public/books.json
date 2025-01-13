@@ -12,10 +12,10 @@
             "row": 3,
             "column": 2
         },
-        "status": "available",
+        "status": "issued",
         "coverUrl": "https://m.media-amazon.com/images/I/61iPd6gxtOL._SY385_.jpg",
-        "issuedDate": "2024-12-16",
-        "returnDate": "2024-12-23",
+        "issuedDate": "2025-01-16",
+        "returnDate": "2025-01-23",
         "currentHolder": "John Doe",
         "isbn": "9784317579091"
     },
@@ -34,8 +34,8 @@
         },
         "status": "issued",
         "coverUrl": "https://m.media-amazon.com/images/I/71qKyp9CyaL._SY385_.jpg",
-        "issuedDate": "2024-12-19",
-        "returnDate": "2024-12-26",
+        "issuedDate": "2025-01-19",
+        "returnDate": "2025-01-26",
         "currentHolder": "Sanjay Hussain",
         "isbn": "9785392400898"
     },
@@ -54,8 +54,8 @@
         },
         "status": "issued",
         "coverUrl": "https://m.media-amazon.com/images/I/61ZYxrQEpCL._AC_UF1000,1000_QL80_.jpg",
-        "issuedDate": "2024-12-17",
-        "returnDate": "2024-12-24",
+        "issuedDate": "2025-01-17",
+        "returnDate": "2025-01-24",
         "currentHolder": "Rahul Anand"
     },
     {
@@ -106,8 +106,8 @@
         "status": "issued",
         "coverUrl": "https://books.google.co.in/books/content?id=HestSXO362YC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0M7yu-bMY2SEwFfdTgPn3DOvCvDQ&w=1280",
         "isbn": "978-0743273565",
-        "issuedDate": "2024-12-15",
-        "returnDate": "2024-12-22",
+        "issuedDate": "2025-01-15",
+        "returnDate": "2025-01-22",
         "currentHolder": "Aashi Mehta"
     },
     {
@@ -143,8 +143,8 @@
         "status": "issued",
         "coverUrl": "https://m.media-amazon.com/images/I/8125BDk3l9L._AC_UF1000,1000_QL80_.jpg",
         "isbn": "978-0316769488",
-        "issuedDate": "2024-12-18",
-        "returnDate": "2024-12-25",
+        "issuedDate": "2025-01-18",
+        "returnDate": "2025-01-25",
         "currentHolder": "Sunaina Gupta"
     }
 ]

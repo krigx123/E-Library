@@ -117,7 +117,7 @@ def main():
                         print(f"Processing ISBN: {isbn}")
 
                         # Update the book's status in the JSON file
-                        # update_book_status_by_isbn(isbn)
+                        update_book_status_by_isbn(isbn)
 
                         # Search for the book in the database
                         target_shelf = get_shelf_for_isbn(isbn)
