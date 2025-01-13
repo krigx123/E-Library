@@ -5,7 +5,7 @@ import os
 
 # Serial Communication Configuration
 USB_SERIAL_PORT = (
-    "COM8"  # Replace with your actual USB serial port (e.g., COM3, /dev/ttyUSB0, etc.)
+    "COM9"  # Replace with your actual USB serial port (e.g., COM3, /dev/ttyUSB0, etc.)
 )
 BAUD_RATE = 9600
 
@@ -117,7 +117,7 @@ def main():
                         print(f"Processing ISBN: {isbn}")
 
                         # Update the book's status in the JSON file
-                        update_book_status_by_isbn(isbn)
+                        # update_book_status_by_isbn(isbn)
 
                         # Search for the book in the database
                         target_shelf = get_shelf_for_isbn(isbn)
